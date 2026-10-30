@@ -2,7 +2,7 @@
 
 **简体中文** · [English](README.en.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md)
 
-> 最后核实：2026-10-25。价格、付款方式和售后规则每月对照官网核实一次，有变化会更新这里的日期。
+> 最后核实：2026-10-30。价格、付款方式和售后规则每月对照官网核实一次，有变化会更新这里的日期。
 
 想给自己的 ChatGPT 账号开 Plus，结果卡在付款这一步？这份指南讲清楚三件事：卡为什么会被拒，手上没有能用的卡时有哪几条路、各自的代价是什么，以及我们 Pay2GPT 是怎么做的。哪条路适合你，看完自己判断。
 
@@ -75,6 +75,14 @@ OpenAI 自己也说，它一般拿不到银行拒付的具体原因，最快的�
 
 价格低得离谱的，基本就是答案。
 
+### 这些情况用不着代充
+
+- 你已经有 OpenAI 能用的卡：直接官方付款更便宜。
+- 有海外亲友愿意每月帮你付。
+- 你本来就在用外区 Apple ID，也有稳定的礼品卡渠道。
+- 需要公司发票、由管理员统一管理席位：OpenAI 官方的团队方案更合适。
+- 只是偶尔聊几句：免费版或更便宜的套餐可能就够了。
+
 ## Pay2GPT 是怎么做的
 
 Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一件事：把 Go、Plus、Pro 开到你自己的 ChatGPT 账号上。
@@ -86,12 +94,12 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 几个你可能关心的点：
 
 - **不要密码，也不要 ChatGPT 验证码**。谁以 Pay2GPT 的名义找你要，都是假的。
-- **Session 只用来开通这一单**，加密存储，72 小时内删除。开通后你可以在 ChatGPT 的安全设置里「退出所有设备」，这段 Session 就失效了。
+- **Session 只用来开通这一单**（确认账号、开通套餐、开通后关掉自动续费），不入库。开通后你可以在 ChatGPT 的安全设置里「退出所有设备」，这段 Session 就失效了。
 - **开不上，全额退回原付款方式。**
-- **30 天质保**：开通后 30 天内，因为不是你这边的原因掉了，免费补开；补不了就退剩余天数。因为你自己的账号问题（比如共享、转卖、违反 OpenAI 使用政策）导致的封号不在售后范围内，具体看[服务条款](https://pay2gpt.com/zh-CN/terms?utm_source=github&utm_medium=readme&utm_campaign=guide)。
+- **30 天质保**：开通后 30 天内，因为不是你这边的原因掉了，免费补开；补不了就退剩余天数。因为你自己的账号问题（比如共享、转卖、违反 OpenAI 使用政策）导致的封号不在售后范围内，具体看[服务条款](https://pay2gpt.com/terms?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 - **退款时效**：资料齐全后一般 3 个工作日内审核完，通过后一般 7 个工作日内到账，具体看付款渠道。USDT 退款会扣掉链上手续费。
 
-用支付宝付：[支付宝开通 ChatGPT Plus](https://pay2gpt.com/zh-CN/guide/alipay?utm_source=github&utm_medium=readme&utm_campaign=guide)。用 USDT 付：支持 TRC20、ERC20、Base、BSC，TRC20 手续费最低，汇率锁定 15 分钟，1 个区块确认后自动跳到订单页，详见 [USDT 付款](https://pay2gpt.com/zh-CN/guide/usdt?utm_source=github&utm_medium=readme&utm_campaign=guide)。
+用支付宝付：[支付宝开通 ChatGPT Plus](https://pay2gpt.com/guide/alipay?utm_source=github&utm_medium=readme&utm_campaign=guide)。用 USDT 付：支持 TRC20、ERC20、Base、BSC，TRC20 手续费最低，汇率锁定 15 分钟，1 个区块确认后自动跳到订单页，详见 [USDT 付款](https://pay2gpt.com/guide/usdt?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 
 ## 价格
 
@@ -99,16 +107,16 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 
 | 方案 | 价格 | 适合谁 |
 | --- | --- | --- |
-| Go | $6.90 | 日常聊天、查资料，比免费版额度多 |
+| Go | $6.99 | 日常聊天、查资料，比免费版额度多 |
 | Plus | $21.90 | 写作、研究、写代码，大多数人选这个 |
 | Plus 半价 | $13.90 | 账号拿到了 OpenAI 半价优惠的，就是一个月正常的 Plus，不自动续费 |
 | Pro 100 | $119 | 每天重度使用，要用 Pro 模型 |
-| Pro 200 | $185 | 比 Pro 100 用量更多，适合大量开发和研究 |
+| Pro 200 | $199 | 比 Pro 100 用量更多，适合大量开发和研究 |
 | Pro 500 | $499 | 最高档，唯一带 Ultrafast 模式 |
 
-Plus 半价先[免费查一下账号有没有资格](https://pay2gpt.com/zh-CN/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide)，不用下单。拿不准选 Plus 还是 Pro，看[这篇](https://pay2gpt.com/zh-CN/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide)。
+Plus 半价先[免费查一下账号有没有资格](https://pay2gpt.com/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide)，不用下单。拿不准选 Plus 还是 Pro，看[这篇](https://pay2gpt.com/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 
-[开通 Plus →](https://pay2gpt.com/zh-CN/checkout?plan=plus&utm_source=github&utm_medium=readme&utm_campaign=guide)
+[开通 Plus →](https://pay2gpt.com/checkout?plan=plus&utm_source=github&utm_medium=readme&utm_campaign=guide)
 
 ## 常见问题
 
@@ -116,13 +124,16 @@ Plus 半价先[免费查一下账号有没有资格](https://pay2gpt.com/zh-CN/p
 能先买，但别急着开。订阅不叠加，等当前的快到期再开通。付款后 7 天内连接账号就行，订单不会作废；超过 7 天联系客服，按订单处理。
 
 **会不会被封号？**
-没人能保证一个号永远不被封。大多数封号和三件事有关：盗刷的卡付款、多人共享一个号、把密码交给别人。这三件我们都不做。详见[代充会不会封号](https://pay2gpt.com/zh-CN/guide/safe?utm_source=github&utm_medium=readme&utm_campaign=guide)。
+没人能保证一个号永远不被封。大多数封号和三件事有关：盗刷的卡付款、多人共享一个号、把密码交给别人。这三件我们都不做。详见[代充会封号吗](https://pay2gpt.com/guide/ban-risk?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 
 **Session 是什么？为什么不是密码？**
 它就是让你的浏览器保持登录状态的那个凭证。有了它，开通可以直接在你的账号上完成，不需要密码和验证码。正因为它有效期内等同于一个已登录的浏览器，只在你自己的订单页里粘贴，别发给任何人。
 
 **开通后还是没有 Plus？**
 退出 ChatGPT 再重新登录。10 分钟后还没生效，带上订单号发邮件给客服。
+
+**付款或开通时报错，不知道是什么原因？**
+按现象查 [ChatGPT 付款 / 订阅报错大全](https://github.com/pay2gpt/chatgpt-payment-errors)，每条都附了 OpenAI 官方说明。
 
 **提示 Session 不完整或已过期？**
 刷新 chatgpt.com，重新打开登录信息页，用 Ctrl/⌘ + A 全选复制。手机上请用浏览器。
@@ -137,14 +148,24 @@ ChatGPT 只在 OpenAI 支持的国家和地区提供服务，在列表以外的�
 正常 1–3 分钟就有 1 个确认。超过 15 分钟，带上交易哈希发邮件给客服。转错网络的，提交哈希后客服 24 小时内核实。
 
 **怎么联系你们？**
-邮件 support@pay2gpt.com，带上订单号会快很多。订单进度随时在[我的订单](https://pay2gpt.com/zh-CN/orders?utm_source=github&utm_medium=readme&utm_campaign=guide)里用邮箱查，当前接单和开通情况看[服务状态](https://pay2gpt.com/zh-CN/status?utm_source=github&utm_medium=readme&utm_campaign=guide)。
+邮件 support@pay2gpt.com，带上订单号会快很多。订单进度随时在[我的订单](https://pay2gpt.com/orders?utm_source=github&utm_medium=readme&utm_campaign=guide)里用邮箱查，当前接单和开通情况看[服务状态](https://pay2gpt.com/status?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 
 ## 相关链接
 
-- [Pay2GPT 首页](https://pay2gpt.com/zh-CN?utm_source=github&utm_medium=readme&utm_campaign=guide)
-- [没有海外卡怎么开 Plus，5 种方法对比](https://pay2gpt.com/zh-CN/guide/compare?utm_source=github&utm_medium=readme&utm_campaign=guide)
-- [怎么开通 ChatGPT](https://pay2gpt.com/zh-CN/guide/activate?utm_source=github&utm_medium=readme&utm_campaign=guide)
-- [帮助中心](https://pay2gpt.com/zh-CN/help?utm_source=github&utm_medium=readme&utm_campaign=guide)
+- [Pay2GPT 首页](https://pay2gpt.com/?utm_source=github&utm_medium=readme&utm_campaign=guide)
+- [没有海外卡怎么开 Plus，5 种方法对比](https://pay2gpt.com/guide/compare?utm_source=github&utm_medium=readme&utm_campaign=guide)
+- [怎么开通 ChatGPT](https://pay2gpt.com/guide/activate?utm_source=github&utm_medium=readme&utm_campaign=guide)
+- [充值和开通报错大全](https://pay2gpt.com/guide/errors?utm_source=github&utm_medium=readme&utm_campaign=guide)
+- [代充会封号吗](https://pay2gpt.com/guide/ban-risk?utm_source=github&utm_medium=readme&utm_campaign=guide)
+- [帮助中心](https://pay2gpt.com/help?utm_source=github&utm_medium=readme&utm_campaign=guide)
+- [ChatGPT 付款 / 订阅报错对照表（GitHub）](https://github.com/pay2gpt/chatgpt-payment-errors)
+
+## 更新记录
+
+| 日期 | 内容 |
+| --- | --- |
+| 2026-10-30 | Go 改为 $6.99、Pro 200 改为 $199；更正 Session 的处理说明（不入库）；补上“这些情况用不着代充”，加上报错大全和封号说明的链接 |
+| 2026-10-25 | 首次发布 |
 
 ---
 

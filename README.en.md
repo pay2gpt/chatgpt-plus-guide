@@ -2,7 +2,7 @@
 
 [简体中文](README.md) · **English** · [Русский](README.ru.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md)
 
-> Last verified: 2026-10-25. Prices, payment methods and refund rules are checked against the live site every month, and this date moves when they are.
+> Last verified: 2026-10-30. Prices, payment methods and refund rules are checked against the live site every month, and this date moves when they are.
 
 You picked a plan, typed in your card, and got "Your card was declined." Or you only have a local debit card, a mobile wallet or crypto. This guide covers why the payment fails, the options you actually have when you can't pay OpenAI directly (with the downside of each), and how Pay2GPT does it. Pick whatever fits you.
 
@@ -86,7 +86,7 @@ Pay2GPT is an independent service and isn't affiliated with OpenAI. It does one 
 What you'll probably want to know:
 
 - **No password, and no ChatGPT verification code.** Anyone asking for those in Pay2GPT's name is a fake.
-- **The Session is used only to activate your order.** It's stored encrypted and deleted within 72 hours. Once your plan shows up, you can sign out of all devices in ChatGPT's security settings and that session stops working.
+- **The Session is used only for your order** (confirming the account, activating the plan, then turning off auto-renewal) and is never saved to our database. Once your plan shows up, you can sign out of all devices in ChatGPT's security settings and that session stops working.
 - **If the plan can't be activated, you get the full amount back** to the way you paid.
 - **30-day warranty.** If the plan stops working within 30 days of activation for a reason that isn't on your side, it's restored free or the remaining days are refunded. Bans caused by how the account itself is used (sharing it, reselling it, breaking OpenAI's usage policies) aren't covered. The [Terms of Service](https://pay2gpt.com/terms?utm_source=github&utm_medium=readme&utm_campaign=guide) list the exclusions.
 - **Refund timing.** Once support has your order details, review usually takes up to 3 business days. After approval the money usually arrives within 7 business days, depending on the payment channel. USDT refunds are sent less the network fee.
@@ -101,11 +101,11 @@ All in US dollars, per month.
 
 | Plan | Price | Good for |
 | --- | --- | --- |
-| Go | $6.90 | Everyday chat and lookups, with more room than the free plan |
+| Go | $6.99 | Everyday chat and lookups, with more room than the free plan |
 | Plus | $21.90 | Writing, research and coding. Most people pick this one |
 | Plus Half Price | $13.90 | Accounts that got OpenAI's half-price offer. It's regular Plus for one month, no auto-renewal |
 | Pro 100 | $119 | Heavy daily use, with Pro models |
-| Pro 200 | $185 | More usage than Pro 100, for heavy development and research |
+| Pro 200 | $199 | More usage than Pro 100, for heavy development and research |
 | Pro 500 | $499 | The top tier, and the only one with Ultrafast mode |
 
 For Plus Half Price, [check your eligibility for free](https://pay2gpt.com/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide) first. No order needed. Not sure between Plus and Pro? [This helps](https://pay2gpt.com/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).

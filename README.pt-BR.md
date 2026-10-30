@@ -2,7 +2,7 @@
 
 [简体中文](README.md) · [English](README.en.md) · [Русский](README.ru.md) · [Español](README.es.md) · **Português (Brasil)**
 
-> Última verificação: 2026-10-25. Todo mês a gente confere preços, formas de pagamento e regras de reembolso com o site e atualiza esta data.
+> Última verificação: 2026-10-30. Todo mês a gente confere preços, formas de pagamento e regras de reembolso com o site e atualiza esta data.
 
 Você coloca o cartão, clica em assinar e aparece "Your card was declined". No Brasil isso é bem comum: o cartão não está liberado para compra internacional, o débito virtual do banco digital não passa, ou o banco barra a cobrança em dólar sem avisar. Este guia explica por que isso acontece, quais são as alternativas quando não dá para pagar a OpenAI direto (e o lado ruim de cada uma), e como o Pay2GPT funciona. Escolha o que fizer sentido para você.
 
@@ -89,7 +89,7 @@ O Pay2GPT é um serviço independente, sem ligação com a OpenAI. Ele faz uma c
 O que você provavelmente quer saber:
 
 - **A gente não pede senha nem código de verificação do ChatGPT.** Se alguém pedir em nome do Pay2GPT, é golpe.
-- **A Session só serve para ativar o seu pedido.** Fica guardada criptografada e é apagada em até 72 horas. Quando o plano aparecer, você pode sair de todos os dispositivos nas configurações de segurança do ChatGPT e essa sessão para de valer.
+- **A Session só serve para o seu pedido** (confirmar a conta, ativar o plano e depois desligar a renovação automática) e nunca é salva no nosso banco de dados. Quando o plano aparecer, você pode sair de todos os dispositivos nas configurações de segurança do ChatGPT e essa sessão para de valer.
 - **Se não der para ativar, você recebe o valor inteiro de volta** na mesma forma de pagamento.
 - **Garantia de 30 dias.** Se o plano parar de funcionar em até 30 dias depois da ativação por um motivo que não é seu, a gente reativa de graça ou devolve os dias que faltam. Bloqueio por causa do uso da própria conta (compartilhar, revender, quebrar as regras de uso da OpenAI) não entra. As exceções estão nos [Termos de serviço](https://pay2gpt.com/pt-BR/terms?utm_source=github&utm_medium=readme&utm_campaign=guide).
 - **Prazo do reembolso.** Com os dados do pedido em mãos, o suporte costuma analisar em até 3 dias úteis. Depois de aprovado, o dinheiro costuma chegar em até 7 dias úteis, dependendo da forma de pagamento. Reembolso em USDT é enviado descontando a taxa da rede.
@@ -100,11 +100,11 @@ Em dólar americano, por mês.
 
 | Plano | Preço | Para quem |
 | --- | --- | --- |
-| Go | $6.90 | Conversa e consultas do dia a dia, com mais espaço que o plano grátis |
+| Go | $6.99 | Conversa e consultas do dia a dia, com mais espaço que o plano grátis |
 | Plus | $21.90 | Escrever, pesquisar e programar. É o que a maioria escolhe |
 | Plus pela metade do preço | $13.90 | Contas que receberam a oferta de 50% da OpenAI. É o Plus normal por um mês, sem renovação automática |
 | Pro 100 | $119 | Uso pesado todo dia, com os modelos Pro |
-| Pro 200 | $185 | Mais uso que o Pro 100, para desenvolvimento e pesquisa pesados |
+| Pro 200 | $199 | Mais uso que o Pro 100, para desenvolvimento e pesquisa pesados |
 | Pro 500 | $499 | O nível mais alto e o único com o modo Ultrafast |
 
 No Plus pela metade do preço, [confira de graça se sua conta tem direito](https://pay2gpt.com/pt-BR/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide) antes, sem fazer pedido. Em dúvida entre Plus e Pro? [Veja aqui](https://pay2gpt.com/pt-BR/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).
