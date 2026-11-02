@@ -2,7 +2,7 @@
 
 **简体中文** · [English](README.en.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md)
 
-> 最后核实：2026-10-30。价格、付款方式和售后规则每月对照官网核实一次，有变化会更新这里的日期。
+> 最后核实：2026-11-02。价格、付款方式和售后规则每月对照官网核实一次，有变化会更新这里的日期。
 
 想给自己的 ChatGPT 账号开 Plus，结果卡在付款这一步？这份指南讲清楚三件事：卡为什么会被拒，手上没有能用的卡时有哪几条路、各自的代价是什么，以及我们 Pay2GPT 是怎么做的。哪条路适合你，看完自己判断。
 
@@ -23,7 +23,7 @@
 - **之前在 iPhone 上订阅过**：订阅是 Apple 扣的，去 iPhone 的「设置 → Apple ID → 订阅」里看，取消也在那里。
 - **之前在安卓上订阅过**：去 Google Play 的「付款和订阅」里看。
 
-如果显示的是 Free，或者订阅已经到期，就可以往下看了。想自己取消订阅，参考 OpenAI 官方说明：[Canceling your ChatGPT subscription](https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-plus-subscription)。
+如果显示的是 Free，或者订阅已经到期，就可以往下看了。想自己取消订阅，参考 OpenAI 官方说明：[Canceling your ChatGPT subscription](https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription)。
 
 ## 为什么卡会被拒
 
@@ -87,7 +87,7 @@ OpenAI 自己也说，它一般拿不到银行拒付的具体原因，最快的�
 
 Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一件事：把 Go、Plus、Pro 开到你自己的 ChatGPT 账号上。
 
-1. **选方案、付款**。不用注册，留个邮箱就行。支持银行卡（Visa、Mastercard、银联等）、支付宝、加密货币（USDT、USDC 等）。暂时不支持微信支付。订单按美元计价。
+1. **选方案、付款**。不用注册，留个邮箱就行。支持银行卡（Visa、Mastercard、银联等）、支付宝、加密货币（USDT、USDC 等），也可以用 SBP 或俄罗斯银行卡（含 Mir）按结算页显示的卢布金额付款。暂时不支持微信支付。订单按美元计价。
 2. **连接你的账号**。付完款进入订单页（购买邮件里也有回到订单页的链接），先用邮箱验证码确认一下，然后在浏览器里登录 ChatGPT，打开 `chatgpt.com/api/auth/session`，全选复制这段 Session 文本，粘回订单页。手机上请用浏览器，别用 ChatGPT App。付款后 7 天内连接账号就行。
 3. **开通**。提交后过 1–3 分钟刷新 ChatGPT，看到方案标识就好了。
 
@@ -99,7 +99,7 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 - **30 天质保**：开通后 30 天内，因为不是你这边的原因掉了，免费补开；补不了就退剩余天数。因为你自己的账号问题（比如共享、转卖、违反 OpenAI 使用政策）导致的封号不在售后范围内，具体看[服务条款](https://pay2gpt.com/terms?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 - **退款时效**：资料齐全后一般 3 个工作日内审核完，通过后一般 7 个工作日内到账，具体看付款渠道。USDT 退款会扣掉链上手续费。
 
-用支付宝付：[支付宝开通 ChatGPT Plus](https://pay2gpt.com/guide/alipay?utm_source=github&utm_medium=readme&utm_campaign=guide)。用 USDT 付：支持 TRC20、ERC20、Base、BSC，TRC20 手续费最低，汇率锁定 15 分钟，1 个区块确认后自动跳到订单页，详见 [USDT 付款](https://pay2gpt.com/guide/usdt?utm_source=github&utm_medium=readme&utm_campaign=guide)。
+用支付宝付：[支付宝开通 ChatGPT Plus](https://pay2gpt.com/guide/alipay?utm_source=github&utm_medium=readme&utm_campaign=guide)。用 USDT 付：USDT 支持 TRC20、BEP20（BSC）、ERC20、Polygon，USDC 支持 ERC20、Base、Polygon，大多数人选 TRC20；付款页显示的准确金额 20 分钟内有效，1 个区块确认后自动跳到订单页，详见 [USDT 付款](https://pay2gpt.com/guide/usdt?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 
 ## 价格
 
@@ -107,12 +107,12 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 
 | 方案 | 价格 | 适合谁 |
 | --- | --- | --- |
-| Go | $6.99 | 日常聊天、查资料，比免费版额度多 |
-| Plus | $21.90 | 写作、研究、写代码，大多数人选这个 |
-| Plus 半价 | $13.90 | 账号拿到了 OpenAI 半价优惠的，就是一个月正常的 Plus，不自动续费 |
-| Pro 100 | $119 | 每天重度使用，要用 Pro 模型 |
-| Pro 200 | $199 | 比 Pro 100 用量更多，适合大量开发和研究 |
-| Pro 500 | $499 | 最高档，唯一带 Ultrafast 模式 |
+| Go | $8.90 | 日常聊天、查资料，比免费版额度多 |
+| Plus | $23.90 | 写作、研究、写代码，大多数人选这个 |
+| Plus 半价 | $13.90（暂不可购） | 账号拿到了 OpenAI 半价优惠的，就是一个月正常的 Plus，不自动续费 |
+| Pro 100 | $124.90 | 每天重度使用，要用 Pro 模型 |
+| Pro 200 | $214 | 比 Pro 100 用量更多，适合大量开发和研究 |
+| Pro 500 | $529 | 最高档，唯一带 Ultrafast 模式 |
 
 Plus 半价先[免费查一下账号有没有资格](https://pay2gpt.com/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide)，不用下单。拿不准选 Plus 还是 Pro，看[这篇](https://pay2gpt.com/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 
@@ -164,6 +164,7 @@ ChatGPT 只在 OpenAI 支持的国家和地区提供服务，在列表以外的�
 
 | 日期 | 内容 |
 | --- | --- |
+| 2026-11-02 | 按官网新价更新全部套餐价格，Plus 半价标注暂不可购；补上 SBP 和俄罗斯银行卡（含 Mir）付款；更正 USDT/USDC 支持的网络和 20 分钟金额有效期；取消订阅的 OpenAI 帮助文章换成新地址 |
 | 2026-10-30 | Go 改为 $6.99、Pro 200 改为 $199；更正 Session 的处理说明（不入库）；补上“这些情况用不着代充”，加上报错大全和封号说明的链接 |
 | 2026-10-25 | 首次发布 |
 

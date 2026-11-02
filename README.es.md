@@ -2,7 +2,7 @@
 
 [简体中文](README.md) · [English](README.en.md) · [Русский](README.ru.md) · **Español** · [Português (Brasil)](README.pt-BR.md)
 
-> Última verificación: 2026-10-30. Cada mes revisamos precios, métodos de pago y reglas de reembolso contra el sitio, y actualizamos esta fecha.
+> Última verificación: 2026-11-02. Cada mes revisamos precios, métodos de pago y reglas de reembolso contra el sitio, y actualizamos esta fecha.
 
 Pones tu tarjeta de débito, le das a pagar y sale "Your card was declined". Pasa muchísimo en Latinoamérica: el banco no tiene habilitadas las compras internacionales, la tarjeta es prepaga, o te piden una verificación que nunca llega. Esta guía explica por qué pasa, qué opciones tienes si no puedes pagarle a OpenAI directo (y lo malo de cada una), y cómo funciona Pay2GPT. Tú decides cuál te sirve.
 
@@ -23,7 +23,7 @@ Las suscripciones no se acumulan. Si todavía tienes una activa, la nueva no ent
 - **Si te suscribiste desde un iPhone**: el cobro lo hace Apple. Míralo en Ajustes → tu nombre → Suscripciones, y cancélalo ahí si hace falta.
 - **Si fue desde Android**: en Google Play, "Pagos y suscripciones".
 
-Si dice Free o el plan de pago ya venció, sigue leyendo. Para cancelar tú mismo, OpenAI lo explica aquí: [Canceling your ChatGPT subscription](https://help.openai.com/en/articles/7232927-how-do-i-cancel-my-chatgpt-plus-subscription).
+Si dice Free o el plan de pago ya venció, sigue leyendo. Para cancelar tú mismo, OpenAI lo explica aquí: [Canceling your ChatGPT subscription](https://help.openai.com/en/articles/7232927-canceling-your-chatgpt-subscription).
 
 ## Por qué te rechazan la tarjeta
 
@@ -81,8 +81,8 @@ Un precio muy por debajo del resto es la señal más clara de que algo anda mal.
 
 Pay2GPT es un servicio independiente, sin relación con OpenAI. Hace una sola cosa: activa Go, Plus o Pro en la cuenta de ChatGPT que ya tienes.
 
-1. **Elige el plan y paga.** Sin registrarte, solo con un correo. Puedes pagar con tarjeta (Visa, Mastercard, UnionPay y otras), Alipay o cripto (USDT, USDC y otras). WeChat Pay todavía no. El pedido se cobra en dólares estadounidenses.
-   - **USDT** suele ser lo más práctico si tu tarjeta no pasa. Se aceptan las redes TRC20, ERC20, Base y BSC. TRC20 es la de comisión más baja y el tipo de cambio queda fijo por 15 minutos. Más detalles en [Pagar con USDT](https://pay2gpt.com/es/guide/usdt?utm_source=github&utm_medium=readme&utm_campaign=guide).
+1. **Elige el plan y paga.** Sin registrarte, solo con un correo. Puedes pagar con tarjeta (Visa, Mastercard, UnionPay y otras), Alipay, cripto (USDT, USDC y otras), o SBP y tarjetas de bancos rusos (incluida Mir) en rublos, por el monto que muestra el checkout. WeChat Pay todavía no. El pedido se cobra en dólares estadounidenses.
+   - **USDT** suele ser lo más práctico si tu tarjeta no pasa. USDT funciona en TRC20, BEP20 (BSC), ERC20 y Polygon, y USDC en ERC20, Base y Polygon. TRC20 es la que más se usa, y la página de pago te muestra el monto exacto y lo mantiene por 20 minutos. Más detalles en [Pagar con USDT](https://pay2gpt.com/es/guide/usdt?utm_source=github&utm_medium=readme&utm_campaign=guide).
 2. **Conecta tu cuenta.** Después de pagar llegas a la página del pedido (el correo de compra también trae el enlace). Confirma tu correo con un código de un solo uso. Luego, en un navegador donde tengas la sesión de ChatGPT abierta, entra a `chatgpt.com/api/auth/session`, selecciona todo, cópialo y pega ese texto de Session en la página del pedido. En el celular usa el navegador, no la app de ChatGPT. Tienes 7 días desde el pago para hacerlo.
 3. **Listo.** Actualiza ChatGPT después de 1 a 3 minutos. Cuando aparezca la insignia de tu plan, ya quedó.
 
@@ -100,12 +100,12 @@ En dólares estadounidenses, por mes.
 
 | Plan | Precio | Para quién |
 | --- | --- | --- |
-| Go | $6.99 | Chat y consultas del día a día, con más margen que el plan gratis |
-| Plus | $21.90 | Escribir, investigar y programar. Es el que elige la mayoría |
-| Plus a mitad de precio | $13.90 | Cuentas que recibieron la oferta de 50% de OpenAI. Es Plus normal por un mes, sin renovación automática |
-| Pro 100 | $119 | Uso intenso todos los días, con modelos Pro |
-| Pro 200 | $199 | Más uso que Pro 100, para desarrollo e investigación pesada |
-| Pro 500 | $499 | El nivel más alto y el único con modo Ultrafast |
+| Go | $8.90 | Chat y consultas del día a día, con más margen que el plan gratis |
+| Plus | $23.90 | Escribir, investigar y programar. Es el que elige la mayoría |
+| Plus a mitad de precio | $13.90 (no disponible por ahora) | Cuentas que recibieron la oferta de 50% de OpenAI. Es Plus normal por un mes, sin renovación automática |
+| Pro 100 | $124.90 | Uso intenso todos los días, con modelos Pro |
+| Pro 200 | $214 | Más uso que Pro 100, para desarrollo e investigación pesada |
+| Pro 500 | $529 | El nivel más alto y el único con modo Ultrafast |
 
 Para Plus a mitad de precio, primero [revisa gratis si tu cuenta califica](https://pay2gpt.com/es/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide), sin hacer pedido. ¿No sabes si te conviene Plus o Pro? [Aquí te ayudamos](https://pay2gpt.com/es/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).
 

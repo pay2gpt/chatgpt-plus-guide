@@ -1,0 +1,45 @@
+# GitHub Pages for pay2gpt/chatgpt-plus-guide. README.md becomes the home page (jekyll-readme-index), the other
+# READMEs become README.<lang>.html, and links between them are rewritten from .md to .html (jekyll-relative-links).
+# Both plugins are on by default on GitHub Pages; list them so a local build matches.
+title: Pay2GPT ChatGPT payment guide
+url: https://pay2gpt.github.io
+baseurl: /chatgpt-plus-guide
+lang: zh-CN
+# Move together with the "last verified" line at the top of every README (see PUBLISHING.md).
+last_verified: 2026-11-02
+repository: pay2gpt/chatgpt-plus-guide
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+exclude:
+  - PUBLISHING.md
+translations:
+  - {lang: zh-CN, file: README.md, path: /}
+  - {lang: en, file: README.en.md, path: /README.en.html}
+  - {lang: ru, file: README.ru.md, path: /README.ru.html}
+  - {lang: es, file: README.es.md, path: /README.es.html}
+  - {lang: pt-BR, file: README.pt-BR.md, path: /README.pt-BR.html}
+defaults:
+  - scope: {path: README.md}
+    values:
+      lang: zh-CN
+      description: 没有海外信用卡、卡被 OpenAI 拒付时怎么开 ChatGPT Plus、Go、Pro：拒卡原因、每条替代路线的代价，以及 Pay2GPT 怎么把套餐开到你自己的账号上。每月核实。
+  - scope: {path: README.en.md}
+    values:
+      lang: en
+      description: How to pay for ChatGPT Plus, Go or Pro when OpenAI declines your card - why it happens, every workaround and its risks, and how Pay2GPT activates the plan on your own account. Verified monthly.
+  - scope: {path: README.ru.md}
+    values:
+      lang: ru
+      description: Как оплатить ChatGPT Plus, Go или Pro, если карта не проходит - почему OpenAI отклоняет карту, какие есть варианты и их риски, и как Pay2GPT подключает план на ваш собственный аккаунт. Проверяется ежемесячно.
+  - scope: {path: README.es.md}
+    values:
+      lang: es
+      description: Cómo pagar ChatGPT Plus, Go o Pro si OpenAI rechaza tu tarjeta - por qué pasa, cada alternativa con sus riesgos y cómo Pay2GPT activa el plan en tu propia cuenta. Verificado cada mes.
+  - scope: {path: README.pt-BR.md}
+    values:
+      lang: pt-BR
+      description: Como assinar ChatGPT Plus, Go ou Pro quando a OpenAI recusa o cartão - por que acontece, cada alternativa e seus riscos, e como o Pay2GPT ativa o plano na sua própria conta. Verificado todo mês.
