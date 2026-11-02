@@ -16,6 +16,9 @@ plugins:
   - jekyll-default-layout
 exclude:
   - PUBLISHING.md
+include:
+  # IndexNow key for pay2gpt.github.io/chatgpt-plus-guide/ (any 32-hex name). Keep it served as plain text.
+  - db76999bb1a344fee0096fad7eedda2f.txt
 translations:
   - {lang: zh-CN, file: README.md, path: /}
   - {lang: en, file: README.en.md, path: /README.en.html}
