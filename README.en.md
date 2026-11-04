@@ -1,7 +1,5 @@
 # How to get ChatGPT Plus, Go or Pro when OpenAI declines your card
 
-> Disclosure: this guide is maintained by the Pay2GPT team, not an independent reviewer. Product and payment check, 2026-11-05: cards and Alipay, USDT/USDC, and SBP/Russian bank cards. The latter are paid in roubles at the amount shown at checkout. Plus Half Price has been withdrawn.
-
 [简体中文](README.md) · **English** · [Русский](README.ru.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md)
 
 > Last verified: 2026-11-02. Prices, payment methods and refund rules are checked against the live site every month, and this date moves when they are.

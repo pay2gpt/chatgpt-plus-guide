@@ -1,7 +1,5 @@
 # Cómo pagar ChatGPT Plus, Go o Pro si te rechazan la tarjeta
 
-> Transparencia: esta guía la mantiene el equipo de Pay2GPT, no un evaluador independiente. Productos y pagos revisados el 2026-11-05: tarjetas y Alipay, USDT/USDC y SBP/tarjetas rusas. Estos últimos se pagan en rublos por el importe mostrado al finalizar la compra. Plus a mitad de precio se ha retirado.
-
 [简体中文](README.md) · [English](README.en.md) · [Русский](README.ru.md) · **Español** · [Português (Brasil)](README.pt-BR.md)
 
 > Última verificación: 2026-11-02. Cada mes revisamos precios, métodos de pago y reglas de reembolso contra el sitio, y actualizamos esta fecha.
