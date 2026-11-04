@@ -1,5 +1,7 @@
 # Cómo pagar ChatGPT Plus, Go o Pro si te rechazan la tarjeta
 
+> Transparencia: esta guía la mantiene el equipo de Pay2GPT, no un evaluador independiente. Productos y pagos revisados el 2026-11-05: tarjetas y Alipay, USDT/USDC y SBP/tarjetas rusas. Estos últimos se pagan en rublos por el importe mostrado al finalizar la compra. Plus a mitad de precio se ha retirado.
+
 [简体中文](README.md) · [English](README.en.md) · [Русский](README.ru.md) · **Español** · [Português (Brasil)](README.pt-BR.md)
 
 > Última verificación: 2026-11-02. Cada mes revisamos precios, métodos de pago y reglas de reembolso contra el sitio, y actualizamos esta fecha.
@@ -81,7 +83,7 @@ Un precio muy por debajo del resto es la señal más clara de que algo anda mal.
 
 Pay2GPT es un servicio independiente, sin relación con OpenAI. Hace una sola cosa: activa Go, Plus o Pro en la cuenta de ChatGPT que ya tienes.
 
-1. **Elige el plan y paga.** Sin registrarte, solo con un correo. Puedes pagar con tarjeta (Visa, Mastercard, UnionPay y otras), Alipay, cripto (USDT, USDC y otras), o SBP y tarjetas de bancos rusos (incluida Mir) en rublos, por el monto que muestra el checkout. WeChat Pay todavía no. El pedido se cobra en dólares estadounidenses.
+1. **Elige el plan y paga.** Sin registrarte, solo con un correo. Puedes pagar con tarjeta (Visa, Mastercard, UnionPay y otras), Alipay, cripto (USDT, USDC y otras), o SBP y tarjetas de bancos rusos (incluida Mir) en rublos, por el monto que muestra el checkout. WeChat Pay todavía no. Los precios se indican en dólares estadounidenses; SBP y las tarjetas rusas se cobran en rublos por el importe mostrado en el checkout.
    - **USDT** suele ser lo más práctico si tu tarjeta no pasa. USDT funciona en TRC20, BEP20 (BSC), ERC20 y Polygon, y USDC en ERC20, Base y Polygon. TRC20 es la que más se usa, y la página de pago te muestra el monto exacto y lo mantiene por 20 minutos. Más detalles en [Pagar con USDT](https://pay2gpt.com/es/guide/usdt?utm_source=github&utm_medium=readme&utm_campaign=guide).
 2. **Conecta tu cuenta.** Después de pagar llegas a la página del pedido (el correo de compra también trae el enlace). Confirma tu correo con un código de un solo uso. Luego, en un navegador donde tengas la sesión de ChatGPT abierta, entra a `chatgpt.com/api/auth/session`, selecciona todo, cópialo y pega ese texto de Session en la página del pedido. En el celular usa el navegador, no la app de ChatGPT. Tienes 7 días desde el pago para hacerlo.
 3. **Listo.** Actualiza ChatGPT después de 1 a 3 minutos. Cuando aparezca la insignia de tu plan, ya quedó.
@@ -102,12 +104,13 @@ En dólares estadounidenses, por mes.
 | --- | --- | --- |
 | Go | $8.90 | Chat y consultas del día a día, con más margen que el plan gratis |
 | Plus | $23.90 | Escribir, investigar y programar. Es el que elige la mayoría |
-| Plus a mitad de precio | $13.90 (no disponible por ahora) | Cuentas que recibieron la oferta de 50% de OpenAI. Es Plus normal por un mes, sin renovación automática |
 | Pro 100 | $124.90 | Uso intenso todos los días, con modelos Pro |
 | Pro 200 | $214 | Más uso que Pro 100, para desarrollo e investigación pesada |
 | Pro 500 | $529 | El nivel más alto y el único con modo Ultrafast |
 
-Para Plus a mitad de precio, primero [revisa gratis si tu cuenta califica](https://pay2gpt.com/es/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide), sin hacer pedido. ¿No sabes si te conviene Plus o Pro? [Aquí te ayudamos](https://pay2gpt.com/es/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).
+Créditos Codex (compra única, no suscripción mensual): desde $14.90 por 250 créditos; 500 créditos $27.90, 1000 créditos $49.90. [Todos los paquetes](https://pay2gpt.com/es/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide). Solo para cuentas personales con Plus/Pro activo; no son saldo de la API de OpenAI.
+
+¿No sabes si te conviene Plus o Pro? [Aquí te ayudamos](https://pay2gpt.com/es/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).
 
 [Obtener Plus →](https://pay2gpt.com/es/checkout?plan=plus&utm_source=github&utm_medium=readme&utm_campaign=guide)
 

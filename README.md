@@ -1,5 +1,7 @@
 # 没有海外卡，怎么开 ChatGPT Plus / Go / Pro
 
+> 维护者披露：本文由 Pay2GPT 团队编写，不是独立评测。2026-11-05 复核商品与支付：银行卡和支付宝、USDT/USDC，以及 SBP/俄罗斯银行卡；后者按结算页的卢布金额付款。Plus 半价已下架。
+
 **简体中文** · [English](README.en.md) · [Русский](README.ru.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md)
 
 > 最后核实：2026-11-02。价格、付款方式和售后规则每月对照官网核实一次，有变化会更新这里的日期。
@@ -109,12 +111,13 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 | --- | --- | --- |
 | Go | $8.90 | 日常聊天、查资料，比免费版额度多 |
 | Plus | $23.90 | 写作、研究、写代码，大多数人选这个 |
-| Plus 半价 | $13.90（暂不可购） | 账号拿到了 OpenAI 半价优惠的，就是一个月正常的 Plus，不自动续费 |
 | Pro 100 | $124.90 | 每天重度使用，要用 Pro 模型 |
 | Pro 200 | $214 | 比 Pro 100 用量更多，适合大量开发和研究 |
 | Pro 500 | $529 | 最高档，唯一带 Ultrafast 模式 |
 
-Plus 半价先[免费查一下账号有没有资格](https://pay2gpt.com/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide)，不用下单。拿不准选 Plus 还是 Pro，看[这篇](https://pay2gpt.com/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide)。
+Codex 点数（一次购买，不是包月）：250 点 $14.90 起，500 点 $27.90，1000 点 $49.90，[全部档位看这里](https://pay2gpt.com/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide)。仅适用于已有个人 Plus/Pro 的账号，不是 OpenAI API 余额。
+
+拿不准选 Plus 还是 Pro，看[这篇](https://pay2gpt.com/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide)。
 
 [开通 Plus →](https://pay2gpt.com/checkout?plan=plus&utm_source=github&utm_medium=readme&utm_campaign=guide)
 
@@ -164,6 +167,7 @@ ChatGPT 只在 OpenAI 支持的国家和地区提供服务，在列表以外的�
 
 | 日期 | 内容 |
 | --- | --- |
+| 2026-11-05 | 删除已下架的 Plus 半价和资格检查入口；补上 Codex 点数价格；开头加维护者披露 |
 | 2026-11-02 | 按官网新价更新全部套餐价格，Plus 半价标注暂不可购；补上 SBP 和俄罗斯银行卡（含 Mir）付款；更正 USDT/USDC 支持的网络和 20 分钟金额有效期；取消订阅的 OpenAI 帮助文章换成新地址 |
 | 2026-10-30 | Go 改为 $6.99、Pro 200 改为 $199；更正 Session 的处理说明（不入库）；补上“这些情况用不着代充”，加上报错大全和封号说明的链接 |
 | 2026-10-25 | 首次发布 |

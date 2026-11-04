@@ -1,5 +1,7 @@
 # How to get ChatGPT Plus, Go or Pro when OpenAI declines your card
 
+> Disclosure: this guide is maintained by the Pay2GPT team, not an independent reviewer. Product and payment check, 2026-11-05: cards and Alipay, USDT/USDC, and SBP/Russian bank cards. The latter are paid in roubles at the amount shown at checkout. Plus Half Price has been withdrawn.
+
 [简体中文](README.md) · **English** · [Русский](README.ru.md) · [Español](README.es.md) · [Português (Brasil)](README.pt-BR.md)
 
 > Last verified: 2026-11-02. Prices, payment methods and refund rules are checked against the live site every month, and this date moves when they are.
@@ -79,7 +81,7 @@ A price far below everyone else's is the clearest warning sign.
 
 Pay2GPT is an independent service and isn't affiliated with OpenAI. It does one thing: puts Go, Plus or Pro on the ChatGPT account you already have.
 
-1. **Pick a plan and pay.** No sign-up, just an email address. You can pay by card (Visa, Mastercard, UnionPay and others), Alipay, crypto (USDT, USDC and others), or SBP and Russian bank cards (Mir included) in roubles at the amount shown at checkout. WeChat Pay isn't available yet. Orders are charged in US dollars.
+1. **Pick a plan and pay.** No sign-up, just an email address. You can pay by card (Visa, Mastercard, UnionPay and others), Alipay, crypto (USDT, USDC and others), or SBP and Russian bank cards (Mir included) in roubles at the amount shown at checkout. WeChat Pay isn't available yet. Prices are listed in US dollars; SBP and Russian bank cards are charged in roubles at the amount shown at checkout.
 2. **Connect your account.** After paying you land on your order page (the purchase email links back to it). Confirm your email with a one-time code. Then, in a browser where you're signed in to ChatGPT, open `chatgpt.com/api/auth/session`, select everything, copy it and paste this Session text into the order page. On a phone, use the browser, not the ChatGPT app. You have 7 days after paying to do this.
 3. **Done.** Refresh ChatGPT after 1–3 minutes. When your plan's badge shows up, it worked.
 
@@ -103,12 +105,13 @@ All in US dollars, per month.
 | --- | --- | --- |
 | Go | $8.90 | Everyday chat and lookups, with more room than the free plan |
 | Plus | $23.90 | Writing, research and coding. Most people pick this one |
-| Plus Half Price | $13.90 (currently unavailable) | Accounts that got OpenAI's half-price offer. It's regular Plus for one month, no auto-renewal |
 | Pro 100 | $124.90 | Heavy daily use, with Pro models |
 | Pro 200 | $214 | More usage than Pro 100, for heavy development and research |
 | Pro 500 | $529 | The top tier, and the only one with Ultrafast mode |
 
-For Plus Half Price, [check your eligibility for free](https://pay2gpt.com/en/plus-half-price/check?utm_source=github&utm_medium=readme&utm_campaign=guide) first. No order needed. Not sure between Plus and Pro? [This helps](https://pay2gpt.com/en/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).
+Codex credits (one-time purchase, not a monthly plan): from $14.90 for 250 credits; 500 credits $27.90, 1000 credits $49.90. [All tiers](https://pay2gpt.com/en/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide). For existing personal Plus/Pro accounts only; these are not OpenAI API credits.
+
+Not sure between Plus and Pro? [This helps](https://pay2gpt.com/en/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).
 
 [Get Plus →](https://pay2gpt.com/en/checkout?plan=plus&utm_source=github&utm_medium=readme&utm_campaign=guide)
 
