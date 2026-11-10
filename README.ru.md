@@ -100,6 +100,7 @@ Pay2GPT — независимый сервис, не связанный с Open
 
 В долларах США, за месяц. При оплате через СБП или картой РФ — в рублях, сумму видно до оплаты.
 
+<!-- prices:begin · generated from pay2gpt.com/prices.json by script/update_prices.py, do not edit by hand -->
 | План | Цена | Кому подойдёт |
 | --- | --- | --- |
 | Go | $8.90 | Повседневные вопросы и поиск, лимиты больше, чем на бесплатном плане |
@@ -109,6 +110,7 @@ Pay2GPT — независимый сервис, не связанный с Open
 | Pro 500 | $529 | Максимальный тариф, только в нём есть режим Ultrafast |
 
 Кредиты Codex (разовая покупка, не месячная подписка): от $14.90 за 250 кредитов; 500 кредитов — $27.90, 1000 кредитов — $49.90. [Все пакеты](https://ru.pay2gpt.com/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide). Только для действующих личных аккаунтов Plus/Pro; это не баланс OpenAI API.
+<!-- prices:end -->
 
 Не знаете, что выбрать, Plus или Pro? [Вот разбор](https://ru.pay2gpt.com/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).
 
