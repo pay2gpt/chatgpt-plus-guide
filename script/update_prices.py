@@ -25,7 +25,8 @@ UTM = "utm_source=github&utm_medium=readme&utm_campaign=guide"
 # filled in; {more} lists the next tiers with `tier`, joined by `join`.
 COPY = {
     "README.md": {
-        "head": ("方案", "价格", "适合谁"),
+        "head": ("方案", "USDT / USDC", "支付宝、银行卡", "适合谁"),
+        "fee": "USDT、USDC 按标价付；支付宝和银行卡那一列已含 {percent}% 手续费。",
         "plans": {
             "go": "日常聊天、查资料，比免费版额度多",
             "plus": "写作、研究、写代码，大多数人选这个",
@@ -38,7 +39,8 @@ COPY = {
         "credits_url": "https://pay2gpt.com/codex-credits", "currency": "$",
     },
     "README.en.md": {
-        "head": ("Plan", "Price", "Good for"),
+        "head": ("Plan", "USDT / USDC", "Card, Alipay", "Good for"),
+        "fee": "USDT and USDC pay the list price; card and Alipay add a {percent}% fee, already included in the second column.",
         "plans": {
             "go": "Everyday chat and lookups, with more room than the free plan",
             "plus": "Writing, research and coding. Most people pick this one",
@@ -51,7 +53,8 @@ COPY = {
         "credits_url": "https://pay2gpt.com/en/codex-credits", "currency": "$",
     },
     "README.ru.md": {
-        "head": ("План", "Цена", "Кому подойдёт"),
+        "head": ("План", "USDT / USDC", "Карта, Alipay", "Кому подойдёт"),
+        "fee": "USDT и USDC — по прайсу; при оплате зарубежной картой или Alipay добавляется комиссия {percent}%, она уже учтена во второй колонке.",
         "plans": {
             "go": "Повседневные вопросы и поиск, лимиты больше, чем на бесплатном плане",
             "plus": "Тексты, исследования, код. Большинство выбирает его",
@@ -64,7 +67,8 @@ COPY = {
         "credits_url": "https://ru.pay2gpt.com/codex-credits", "currency": "$",
     },
     "README.es.md": {
-        "head": ("Plan", "Precio", "Para quién"),
+        "head": ("Plan", "USDT / USDC", "Tarjeta, Alipay", "Para quién"),
+        "fee": "USDT y USDC pagan el precio de lista; tarjeta y Alipay añaden una comisión del {percent}%, ya incluida en la segunda columna.",
         "plans": {
             "go": "Chat y consultas del día a día, con más margen que el plan gratis",
             "plus": "Escribir, investigar y programar. Es el que elige la mayoría",
@@ -77,7 +81,8 @@ COPY = {
         "credits_url": "https://pay2gpt.com/es/codex-credits", "currency": "$",
     },
     "README.pt-BR.md": {
-        "head": ("Plano", "Preço", "Para quem"),
+        "head": ("Plano", "USDT / USDC", "Cartão, Alipay", "Para quem"),
+        "fee": "USDT e USDC pagam o preço de tabela; cartão e Alipay acrescentam uma taxa de {percent}%, já incluída na segunda coluna.",
         "plans": {
             "go": "Conversa e consultas do dia a dia, com mais espaço que o plano grátis",
             "plus": "Escrever, pesquisar e programar. É o que a maioria escolhe",
@@ -102,22 +107,28 @@ def catalog():
         with urllib.request.urlopen(request, timeout=30) as response:
             data = json.load(response)
     products = [p for p in data["products"] if p["saleable"] and p["currency"] == "usd" and p["list_cents"] > 0]
+    for product in products:
+        if not product["list_cents"] <= product["method_cents"]["alipay"] == product["method_cents"]["card"]:
+            sys.exit(f"prices.json: {product['slug']} has card and Alipay prices this table cannot show in one column")
     plans = [p for p in products if p["kind"] == "subscription"]
     credits = sorted((p for p in products if p["kind"] == "codex_credits"), key=lambda p: p["credits"])
     if not any(p["slug"] == "plus" for p in plans):
         sys.exit("prices.json has no Plus on sale; refusing to rewrite the price tables")
-    return plans, credits
+    return plans, credits, data["card_markup_bps"]
 
 
 def money(cents, symbol):
     return f"{symbol}{cents // 100}" if cents % 100 == 0 else f"{symbol}{cents / 100:.2f}"
 
 
-def block(copy, plans, credits):
+def block(copy, plans, credits, markup_bps):
     # Blank lines around the table: kramdown (GitHub Pages) reads a table glued to an HTML comment as plain text.
-    lines = [BEGIN, "", "| " + " | ".join(copy["head"]) + " |", "| --- | --- | --- |"]
+    lines = [BEGIN, "", "| " + " | ".join(copy["head"]) + " |", "| --- | --- | --- | --- |"]
     for plan in plans:
-        lines.append(f"| {plan['name']} | {money(plan['list_cents'], copy['currency'])} | {copy['plans'].get(plan['slug'], '')} |")
+        prices = " | ".join(money(plan["method_cents"][method], copy["currency"]) for method in ("crypto", "alipay"))
+        lines.append(f"| {plan['name']} | {prices} | {copy['plans'].get(plan['slug'], '')} |")
+    # The fee as the site states it: 500 basis points read "5", 350 read "3.5".
+    lines += ["", copy["fee"].format(percent=f"{markup_bps / 100:g}")]
     if credits:
         symbol = copy.get("credits_currency", copy["currency"])
         tier = lambda template, p: template.format(credits=p["credits"], price=money(p["list_cents"], symbol))
@@ -130,7 +141,7 @@ def block(copy, plans, credits):
 
 def main():
     check = "--check" in sys.argv[1:]
-    plans, credits = catalog()
+    plans, credits, markup_bps = catalog()
     stale = []
     for name, copy in COPY.items():
         with open(name, encoding="utf-8") as file:
@@ -138,7 +149,7 @@ def main():
         pattern = re.compile(re.escape(BEGIN) + r".*?" + re.escape(END), re.S)
         if not pattern.search(text):
             sys.exit(f"{name} has no prices:begin … prices:end block")
-        updated = pattern.sub(lambda _: block(copy, plans, credits), text, count=1)
+        updated = pattern.sub(lambda _: block(copy, plans, credits, markup_bps), text, count=1)
         if updated != text:
             stale.append(name)
             if not check:

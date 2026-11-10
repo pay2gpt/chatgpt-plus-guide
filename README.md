@@ -107,13 +107,15 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 
 <!-- prices:begin · generated from pay2gpt.com/prices.json by script/update_prices.py, do not edit by hand -->
 
-| 方案 | 价格 | 适合谁 |
-| --- | --- | --- |
-| Go | $8.90 | 日常聊天、查资料，比免费版额度多 |
-| Plus | $23.90 | 写作、研究、写代码，大多数人选这个 |
-| Pro 100 | $124.90 | 每天重度使用，要用 Pro 模型 |
-| Pro 200 | $214 | 比 Pro 100 用量更多，适合大量开发和研究 |
-| Pro 500 | $529 | 最高档，唯一带 Ultrafast 模式 |
+| 方案 | USDT / USDC | 支付宝、银行卡 | 适合谁 |
+| --- | --- | --- | --- |
+| Go | $8.90 | $9.35 | 日常聊天、查资料，比免费版额度多 |
+| Plus | $23.90 | $25.10 | 写作、研究、写代码，大多数人选这个 |
+| Pro 100 | $124.90 | $131.15 | 每天重度使用，要用 Pro 模型 |
+| Pro 200 | $214 | $224.70 | 比 Pro 100 用量更多，适合大量开发和研究 |
+| Pro 500 | $529 | $555.45 | 最高档，唯一带 Ultrafast 模式 |
+
+USDT、USDC 按标价付；支付宝和银行卡那一列已含 5% 手续费。
 
 Codex 点数（一次购买，不是包月）：250 点 $14.90 起，500 点 $27.90，1000 点 $49.90，[全部档位看这里](https://pay2gpt.com/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide)。仅适用于已有个人 Plus/Pro 的账号，不是 OpenAI API 余额。
 

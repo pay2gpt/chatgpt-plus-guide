@@ -101,13 +101,15 @@ All in US dollars, per month.
 
 <!-- prices:begin · generated from pay2gpt.com/prices.json by script/update_prices.py, do not edit by hand -->
 
-| Plan | Price | Good for |
-| --- | --- | --- |
-| Go | $8.90 | Everyday chat and lookups, with more room than the free plan |
-| Plus | $23.90 | Writing, research and coding. Most people pick this one |
-| Pro 100 | $124.90 | Heavy daily use, with Pro models |
-| Pro 200 | $214 | More usage than Pro 100, for heavy development and research |
-| Pro 500 | $529 | The top tier, and the only one with Ultrafast mode |
+| Plan | USDT / USDC | Card, Alipay | Good for |
+| --- | --- | --- | --- |
+| Go | $8.90 | $9.35 | Everyday chat and lookups, with more room than the free plan |
+| Plus | $23.90 | $25.10 | Writing, research and coding. Most people pick this one |
+| Pro 100 | $124.90 | $131.15 | Heavy daily use, with Pro models |
+| Pro 200 | $214 | $224.70 | More usage than Pro 100, for heavy development and research |
+| Pro 500 | $529 | $555.45 | The top tier, and the only one with Ultrafast mode |
+
+USDT and USDC pay the list price; card and Alipay add a 5% fee, already included in the second column.
 
 Codex credits (one-time purchase, not a monthly plan): from $14.90 for 250 credits; 500 credits $27.90, 1000 credits $49.90. [All tiers](https://pay2gpt.com/en/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide). For existing personal Plus/Pro accounts only; these are not OpenAI API credits.
 
