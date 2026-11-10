@@ -99,6 +99,7 @@ O que você provavelmente quer saber:
 Em dólar americano, por mês.
 
 <!-- prices:begin · generated from pay2gpt.com/prices.json by script/update_prices.py, do not edit by hand -->
+
 | Plano | Preço | Para quem |
 | --- | --- | --- |
 | Go | $8.90 | Conversa e consultas do dia a dia, com mais espaço que o plano grátis |
@@ -108,6 +109,7 @@ Em dólar americano, por mês.
 | Pro 500 | $529 | O nível mais alto e o único com o modo Ultrafast |
 
 Créditos Codex (compra única, não assinatura mensal): a partir de US$14.90 por 250 créditos; 500 créditos US$27.90, 1000 créditos US$49.90. [Todos os pacotes](https://pay2gpt.com/pt-BR/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide). Apenas para contas pessoais com Plus/Pro ativo; não são saldo da API da OpenAI.
+
 <!-- prices:end -->
 
 Em dúvida entre Plus e Pro? [Veja aqui](https://pay2gpt.com/pt-BR/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).

@@ -100,6 +100,7 @@ In Pakistan with only JazzCash or Easypaisa? There's a [guide for that](https://
 All in US dollars, per month.
 
 <!-- prices:begin · generated from pay2gpt.com/prices.json by script/update_prices.py, do not edit by hand -->
+
 | Plan | Price | Good for |
 | --- | --- | --- |
 | Go | $8.90 | Everyday chat and lookups, with more room than the free plan |
@@ -109,6 +110,7 @@ All in US dollars, per month.
 | Pro 500 | $529 | The top tier, and the only one with Ultrafast mode |
 
 Codex credits (one-time purchase, not a monthly plan): from $14.90 for 250 credits; 500 credits $27.90, 1000 credits $49.90. [All tiers](https://pay2gpt.com/en/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide). For existing personal Plus/Pro accounts only; these are not OpenAI API credits.
+
 <!-- prices:end -->
 
 Not sure between Plus and Pro? [This helps](https://pay2gpt.com/en/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide).

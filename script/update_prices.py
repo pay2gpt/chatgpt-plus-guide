@@ -114,7 +114,8 @@ def money(cents, symbol):
 
 
 def block(copy, plans, credits):
-    lines = [BEGIN, "| " + " | ".join(copy["head"]) + " |", "| --- | --- | --- |"]
+    # Blank lines around the table: kramdown (GitHub Pages) reads a table glued to an HTML comment as plain text.
+    lines = [BEGIN, "", "| " + " | ".join(copy["head"]) + " |", "| --- | --- | --- |"]
     for plan in plans:
         lines.append(f"| {plan['name']} | {money(plan['list_cents'], copy['currency'])} | {copy['plans'].get(plan['slug'], '')} |")
     if credits:
@@ -124,7 +125,7 @@ def block(copy, plans, credits):
         sentence = copy["credits"].format(first=tier(copy["first"], credits[0]), more=(copy["lead"] + more) if more else "",
                                           url=f"{copy['credits_url']}?{UTM}")
         lines += ["", sentence]
-    return "\n".join(lines + [END])
+    return "\n".join(lines + ["", END])
 
 
 def main():

@@ -106,6 +106,7 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 全部以美元计价，按月。
 
 <!-- prices:begin · generated from pay2gpt.com/prices.json by script/update_prices.py, do not edit by hand -->
+
 | 方案 | 价格 | 适合谁 |
 | --- | --- | --- |
 | Go | $8.90 | 日常聊天、查资料，比免费版额度多 |
@@ -115,6 +116,7 @@ Pay2GPT 是独立的第三方服务，和 OpenAI 没有关联。我们只做一�
 | Pro 500 | $529 | 最高档，唯一带 Ultrafast 模式 |
 
 Codex 点数（一次购买，不是包月）：250 点 $14.90 起，500 点 $27.90，1000 点 $49.90，[全部档位看这里](https://pay2gpt.com/codex-credits?utm_source=github&utm_medium=readme&utm_campaign=guide)。仅适用于已有个人 Plus/Pro 的账号，不是 OpenAI API 余额。
+
 <!-- prices:end -->
 
 拿不准选 Plus 还是 Pro，看[这篇](https://pay2gpt.com/guide/choose?utm_source=github&utm_medium=readme&utm_campaign=guide)。
