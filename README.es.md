@@ -104,7 +104,9 @@ En dólares estadounidenses, por mes.
 | --- | --- | --- | --- | --- |
 | Go | $8.90 | $9.58 | $9.48 | Chat y consultas del día a día, con más margen que el plan gratis |
 | Plus | $23.90 | $25.19 | $24.93 | Escribir, investigar y programar. Es el que elige la mayoría |
+| ChatGPT Business Standard | $29.90 | $31.43 | $31.11 |  |
 | Pro 100 | $124.90 | $130.29 | $128.94 | Uso intenso todos los días, con modelos Pro |
+| ChatGPT Business Premium | $156.90 | $163.58 | $161.90 |  |
 | Pro 200 | $214 | $223 | $220.71 | Más uso que Pro 100, para desarrollo e investigación pesada |
 | Pro 500 | $529 | $550.79 | $545.11 | El nivel más alto y el único con modo Ultrafast |
 
