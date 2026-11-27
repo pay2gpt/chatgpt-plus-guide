@@ -105,6 +105,7 @@ All in US dollars, per month.
 | --- | --- | --- | --- | --- |
 | Go | $8.90 | $9.58 | $9.48 | Everyday chat and lookups, with more room than the free plan |
 | Plus | $23.90 | $25.19 | $24.93 | Writing, research and coding. Most people pick this one |
+| Plus Half Price | $13.90 | $14.78 | $14.63 |  |
 | ChatGPT Business Standard | $29.90 | $31.43 | $31.11 |  |
 | Pro 100 | $124.90 | $130.29 | $128.94 | Heavy daily use, with Pro models |
 | ChatGPT Business Premium | $156.90 | $163.58 | $161.90 |  |
